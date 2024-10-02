@@ -1,0 +1,41 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #001730;
+    color: #fff;
+}
+/* video[poster]{
+height:400px;
+
+} */
+.video {
+    cursor: pointer;
+    background-color: black;
+    width: 100%;
+    height: auto;
+}
+.control {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0px 5px;
+    background-color: #0000008c;
+transform  :translateY(-62px);
+
+
+}
+.inner__controls {
+    background-color: #ffa500c7;
+    border-radius: 30px;
+    margin: 10px 5px 10px;
+}
+input#progress {
+    flex: 1;
+    margin-right: 10px;
+}
+.fa-play:before {
+    content: "\f04b";
+    color: #fff !important;
+}

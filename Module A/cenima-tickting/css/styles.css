@@ -1,0 +1,94 @@
+body{
+background-color:#222E50;
+color: #fff;
+/* display: flex;
+flex-direction: column; */
+}
+
+ul.legend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        background-color: #0f1b3c;
+    display: inline-block;
+    padding: 10px 10px 10px 30px;
+    border: solid 1px #999999;
+    border-radius: 5px;
+        transition: ease-in-out 0.3s;
+}
+ul.legend:hover {
+    box-shadow: 1px 11px 9px 0px #0b1635;
+    transition: ease-in-out 0.3s;
+}
+ul.legend li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 11px;
+    text-align: center;
+}
+ul.legend li .seat {
+    margin: 0 auto;
+}
+/* .center {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+} */
+.centers {
+    height: 100vh;
+}
+select#movies {
+    border: 0;
+    border-radius: 5px;
+}
+.seat{
+    background-color: #BCD8C1;
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+        transition: ease-in-out 0.5s;
+}
+.selected{
+
+        background-color: #E9D985;
+}
+.selecteds{
+     background-color: #E9D985;
+}
+.occupied {
+    background-color: #439A86;
+}
+
+.select-container {
+    margin-bottom: 23px;
+}
+.seat:nth-of-type(2){
+    margin-right: 30px;
+}
+
+.seat:nth-last-of-type(2){
+    margin-left: 30px;
+}
+
+.seat:not(.occupied):hover{
+    cursor: pointer;
+    transform: scale(1.5);
+    transition: ease-in-out 0.2s;
+}
+ul.legend li .seat:hover {
+    cursor: default;
+    transform: scale(1);
+}
+
+.screen {
+    background-color: #fff;
+    width: 50%;
+    height: 88px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    transform: rotateX(-45deg);
+    box-shadow: -1px 3px 14px 3px;
+        border: solid 1px #727272;
+}
